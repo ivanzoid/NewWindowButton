@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+
+<script type="text/javascript">
+
+safari.application.addEventListener("command", commandHandler, false);
+
+function commandHandler(event)
+{
+	if (event.command === "newWindow") { 
+		safari.application.openBrowserWindow(); // open window
+	}
+}
+
+</script>
